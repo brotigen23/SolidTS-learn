@@ -1,15 +1,60 @@
 {
   "projects": [
-    { "id": 1, "name": "Сайт портфолио" },
-    { "id": 2, "name": "Мобильное приложение" },
-    { "id": 3, "name": "Бекэнд API" }
+    {
+      "id": "1",
+      "name": "Сайт портфолио"
+    },
+    {
+      "id": "2",
+      "name": "Мобильное приложение"
+    },
+    {
+      "id": "3",
+      "name": "Бекэнд API"
+    }
   ],
   "tasks": [
-    { "id": 1,  "projectId": 1, "title": "Собрать макет",  "done": false },
-    { "id": 2,  "projectId": 1, "title": "Сверстать главную", "done": true  },
-    { "id": 3,  "projectId": 2, "title": "Экран логина", "done": false },
-    { "id": 4,  "projectId": 2, "title": "Профиль пользователя", "done": false },
-    { "id": 5,  "projectId": 3, "title": "Схема БД", "done": true  },
-    { "id": 6,  "projectId": 3, "title": "Авторизация", "done": false }
+    {
+      "id": "1",
+      "projectId": 1,
+      "title": "Собрать макет",
+      "done": true
+    },
+    {
+      "id": "2",
+      "projectId": 1,
+      "title": "Сверстать главную",
+      "done": true
+    },
+    {
+      "id": "3",
+      "projectId": 2,
+      "title": "Экран логина",
+      "done": false
+    },
+    {
+      "id": "4",
+      "projectId": 2,
+      "title": "Профиль пользователя",
+      "done": false
+    },
+    {
+      "id": "5",
+      "projectId": 3,
+      "title": "Схема БД",
+      "done": true
+    },
+    {
+      "id": "6",
+      "projectId": 3,
+      "title": "Авторизация",
+      "done": false
+    },
+    {
+      "id": "0fed",
+      "done": false,
+      "projectId": "2",
+      "title": "Здача 2"
+    }
   ]
 }
