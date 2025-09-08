@@ -1,27 +1,27 @@
-import { createSignal, createResource } from 'solid-js'
-import './App.css'
-import { getProjects } from './api/projects'
-import type { Project } from './types'
-import ProjectList from './components/ProjectComponent'
-import TaskList from './components/TaskComponents'
+import { createSignal, createResource } from "solid-js";
+import "./App.css";
+import { getProjects } from "./api/projects";
+import type { Project } from "./types";
+import ProjectList from "./components/ProjectComponent";
+import TaskList from "./components/TaskListComponents";
 
 export default function App() {
-  const [selectedProjectID, setSelectedProjectID] = createSignal<number | null>(null)
+  const [selectedProjectID, setSelectedProjectID] = createSignal<number | null>(
+    null,
+  );
 
-  const [projects] = createResource<Project[]>(getProjects)
+  const [projects] = createResource<Project[]>(getProjects);
 
   return (
     <main>
-      <ProjectList 
-        projects={ projects } 
+      <ProjectList
+        projects={projects}
         loading={() => projects.loading}
         error={() => projects.error}
         selectedID={selectedProjectID}
         onSelect={(id) => setSelectedProjectID(id)}
-        />
-      <TaskList 
-        projectID={selectedProjectID}
       />
+      <TaskList projectID={selectedProjectID} />
     </main>
-  )
+  );
 }
